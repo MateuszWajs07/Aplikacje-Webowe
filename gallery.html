@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przykładowe portfolio wykonane w HTML, CSS i JavaScript na podstawie Lab 1.">
+    <title>Projekty | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <a class="brand" href="index.html">
+            <img src="assets/images/avatar.jpg" alt="Avatar gracza" class="avatar">
+            <span>Baribal</span>
+        </a>
+        <nav aria-label="Nawigacja główna">
+        <a href="index.html" aria-current="page">Start</a>
+        <a href="article.html">O mnie</a>
+        <a href="experience.html">Gry</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Chat</a>
+        </nav>
+    </div>
+</header>
+
+
+<main id="main-content" class="container">
+<section class="page-intro">
+    <p class="eyebrow">GALERIA</p>
+    <h1>Moja galeria</h1>
+    
+<section class="section">
+
+    <div class="filters" role="group" aria-label="Filtrowanie mediów">
+        <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">Wszystkie</button>
+        <button type="button" class="filter-button" data-filter="repo" aria-pressed="false">R.E.P.O.</button>
+        <button type="button" class="filter-button" data-filter="hollow knight" aria-pressed="false">Hollow Knight</button>
+        <button type="button" class="filter-button" data-filter="overwatch" aria-pressed="false">Overwatch</button>
+        <button type="button" class="filter-button" data-filter="minecraft" aria-pressed="false">Minecraft</button>
+        <button type="button" class="filter-button" data-filter="wiedzmin" aria-pressed="false">Wiedźmin 3</button>
+        <button type="button" class="filter-button" data-filter="lethal-company" aria-pressed="false">Lethal Company</button>
+    </div>
+
+    <p id="filter-status" class="small-note" role="status">Wyświetlono 10 plików.</p>
+    <div class="gallery">
+
+        <article class="image" data-category="repo">
+            <img src="assets/images/repo_nun.jpg" alt="Zakonnica z gry R.E.P.O.">
+            <div class="image-body"><span class="tag">R.E.P.O.</span><h2>Zakonnica</h2><p>Jumpscare</p></div>
+        </article>
+        <article class="image" data-category="repo">
+            <img src="assets/images/repo_scared.jpg" alt="Przerażony bot z gry R.E.P.O.">
+            <div class="image-body"><span class="tag">R.E.P.O.</span><h2>Przerażony bot</h2><p>Typowa gra w repo</p></div>
+        </article>
+
+        <article class="image" data-category="hollow knight">
+            <img src="assets/images/mantislords.jpg" alt="Mantis Lords z gry Hollow Knight">
+            <div class="image-body"><span class="tag">Hollow Knight</span><h2>Mantis Lords</h2><p>Pokonanie najlepszego Bossa w grze</p></div>
+        </article>
+        <article class="image" data-category="hollow knight">
+            <img src="assets/images/dreamnail.jpg" alt="Dream Nail z gry Hollow Knight">
+            <div class="image-body"><span class="tag">Hollow Knight</span><h2>Dream Nail</h2><p>Random screenshot</p></div>
+        </article>
+
+        <article class="image" data-category="overwatch">
+            <img src="assets/images/ov.jpg" alt="Win screenshot z gry Overwatch">
+            <div class="image-body"><span class="tag">Overwatch</span><h2>Wygrana w Overwatch</h2><p>Random genji play</p></div>
+        </article>
+        <article class="image" data-category="overwatch">
+            <img src="assets/images/ov2.jpg" alt="gra genjim">
+            <div class="image-body"><span class="tag">Overwatch</span><h2>Genji play</h2><p>Zrzut ekranu z rozgrywki</p></div>
+        </article>
+
+        <article class="image" data-category="minecraft">
+            <img src="assets/images/mc.jpg" alt="Rytual">
+            <div class="image-body"><span class="tag">Minecraft</span><h2>Rytuał na serwerze</h2><p>Nie wiem co to jest</p></div>
+        </article>
+
+        <article class="image" data-category="wiedzmin">
+            <img src="assets/images/plotka.jpg" alt="Geralt i Płotka w grze Wiedźmin 3">
+            <div class="image-body"><span class="tag">Wiedźmin 3</span><h2>Płotka</h2><p>Co do?</p></div>
+        </article>
+
+        <article class="image" data-category="lethal-company">
+            <img src="assets/images/lethalcompany.jpg" alt="Wnętrze statku z gry Lethal Company">
+            <div class="image-body"><span class="tag">Lethal Company</span><h2>Zabójcza szafa</h2><p>Kadr z nagrania</p></div>
+        </article>
+    </div>
+</section>
+
+<section class="section video-section">
+    <div class="section-heading">
+        <p class="eyebrow">WIDEO</p>
+        <h2>Clip z Lethal Company</h2>
+        <p>Do dziś nie mam pojęcia co sie tutaj wydarzyło</p>
+    </div>
+    <video controls preload="metadata" poster="assets/images/lethalcompany.jpg" aria-label="Film przedstawiający grę Lethal Company">
+        <source src="assets/video/lethalclip.mp4" type="video/mp4">
+    </video>
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>Mateusz Wajs · Projekt 1 — Aplikacje internetowe</p>
+        <p>Profil gracza: Baribal</p>
+    </div>
+</footer>
+
+</body>
+</html>

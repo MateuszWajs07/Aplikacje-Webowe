@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przykładowe portfolio wykonane w HTML, CSS i JavaScript na podstawie Lab 1.">
+    <title>Doświadczenie | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <a class="brand" href="index.html">
+            <img src="avatar.jpg" alt="Avatar gracza" class="avatar">
+            <span>Baribal</span>
+        </a>
+        <nav aria-label="Nawigacja główna">
+        <a href="index.html" aria-current="page">Start</a>
+        <a href="article.html">O mnie</a>
+        <a href="experience.html">Gry</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Chat</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content" class="container">
+<section class="page-intro">
+    <p class="eyebrow">TABELA GIER</p>
+    <h1>Moje doświadczenie w grach</h1>
+    <p>Poniżej przedstawiam tabelę z częścią mojej biblioteki gier i czas w nich spędzony.</p>
+</section>
+
+<section class="section">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th scope="col">Tytuł</th><th scope="col">Laucher</th><th scope="col">Gatunek</th><th scope="col">Ilość godzin</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Hollow Knight</td><td>Steam</td><td>Platformer / Metroidvania</td><td>64</td></tr>
+                <tr><td>Overwatch</td><td>Steam / Battle.net</td><td>Hero Shooter</td><td>670</td></tr>
+                <tr><td>R.E.P.O.</td><td>Steam</td><td>Horror / Coop</td><td>36</td></tr>
+                <tr><td>Dispatch</td><td>Steam</td><td>Narrative adventure / Strategy hybrid</td><td>11</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="small-note">To nie jest kompletna lista moich gier, ale przedstawia część mojej biblioteki. <br>
+        Tak wiem, że Overwatch ma dużo wiecej godzin niż reszta, ale to dlatego, że kiedyś grałem głównie w strzelanki i to był go to pick.<br>
+    </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>Mateusz Wajs · Projekt 1 — Aplikacje internetowe</p>
+        <p>Profil gracza: Baribal</p>
+    </div>
+</footer>
+
+</body>
+</html>

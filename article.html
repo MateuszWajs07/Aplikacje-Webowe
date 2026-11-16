@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przykładowe portfolio wykonane w HTML, CSS i JavaScript na podstawie Lab 1.">
+    <title>O mnie | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <a class="brand" href="index.html">
+            <img src="assets/images/avatar.jpg" alt="Avatar gracza" class="avatar">
+            <span>Baribal</span>
+        </a>
+        <nav aria-label="Nawigacja główna">
+        <a href="index.html" aria-current="page">Start</a>
+        <a href="article.html">O mnie</a>
+        <a href="experience.html">Gry</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Chat</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content" class="container">
+
+<section class="page-intro">
+    <p class="eyebrow">MINI ARTYKUŁ</p>
+    <h1>O mnie</h1>
+</section>
+
+<article class="article-content">
+    <h2>Trochę o tym, w jakich tytułach spędzam wolny czas</h2>
+    <p class="autor">Autor: Mateusz Wajs</p>
+
+    <p>Moje podejście do gier jest dość zróżnicowane.
+    W sferze tytułów dla jednego gracza moją absolutnie ulubioną produkcją jest Hollow Knight, choć przyznaję, że poziom trudności w Silksong potrafi mocno dać mi w kość. 
+    Z kolei do Wiedźmina 3 wciąż regularnie powracam – z wieczną, żywą nadzieją, że pewnego dnia wreszcie uda mi się go ukończyć.</p>
+    <p>Nie stronię jednak od rozgrywki wieloosobowej.
+        Z przyjemnością spędzam czas ze znajomymi, wchodząc do świata Minecrafta. Tak zwany "friendslop" też nie jest mi obcy, bo takie tytuły jak R.E.P.O. czy Lethal Company również są regularnie w mojej rotacji gier.</p>
+    <p>Czasami przyjemnie wrócić do tytułów esportowych, które jednak traktuje bardziej casualowo. Moim niezmiennym faworytem pozostaje Overwatch.</p>
+    <p>Oczywiście nie mogę się doczekać premiery gry Steal Deal, którą bardzo zachęcam sprawdzić: <a href=https://store.steampowered.com/app/2941450/Steal_Deal/ target="_blank" rel="noopener noreferrer">https://store.stealdealgame.com/</a>.</p>
+
+    <figure class="article-figure">
+        <img class="article-image" src="assets/images/StealDealPromo.jpg" alt="Steal Deal na platformie Steam">
+        <figcaption>Steal Deal na platformie Steam</figcaption>
+    </figure>
+
+</article>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>Mateusz Wajs · Projekt 1 — Aplikacje internetowe</p>
+        <p>Profil gracza: Baribal</p>
+    </div>
+</footer>
+</body>
+</html>

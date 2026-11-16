@@ -25,13 +25,3 @@ filterButtons.forEach((button) => {
         }
     });
 });
-
-// Prosta obsługa formularza: pokazujemy uczciwy komunikat, NIE wysyłamy e-maili.
-const contactForm = document.querySelector("#contact-form");
-if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        document.querySelector("#form-status").textContent =
-            "Formularz jest poprawny. To wersja demonstracyjna – wiadomość nie została wysłana.";
-    });
-}
